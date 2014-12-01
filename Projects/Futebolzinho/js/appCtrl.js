@@ -7,9 +7,8 @@ app.controller('AppCtrl',function($scope){
 
 		var player = $scope.player;
 
-		if (!isNaN(player.name) || player.name.length > 3) {
+		if (!isNaN(player) || player.length > 3) {
 			$scope.listPlayers.push(player);
-			console.log('test');
 		}
 	}
 });

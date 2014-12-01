@@ -78,7 +78,7 @@
 				<p>É hora de convocar os jogadores!</p>
 				<form>
 					<p>
-						<input type="text" placeholder="Jogador" required="" ng-model="player.name">
+						<input type="text" placeholder="Jogador" required="" ng-model="player">
 						<button type="reset">Clear</button>
 					</p>
 					<button type="button" class="btn btn-success" ng-click="convene()">Convocar</button>
@@ -89,7 +89,7 @@
 				<ul>
 					<li ng-repeat="item in listPlayers">
 						<a href="#">
-							<p ng-bind="item.name"></p>
+							<p ng-bind="item"></p>
 							<p></p>
 						</a>
 					</li>					
