@@ -7,6 +7,23 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '607808502680754',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<header>
 		<h1>André Luiz</h1>
 		<nav>
@@ -15,5 +32,6 @@
 			<a href="">Curriculum</a>
 		</nav>
 	</header>
+	<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
 </body>
 </html>
