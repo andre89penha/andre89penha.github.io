@@ -3,35 +3,76 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
 	<title>Hi</title>
+	
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<!--Font-awesome-->
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+	
+  
+	<!-- Building blocks -->
+	<link rel="stylesheet" href="css/action_menu.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/confirm.css">
+	<link rel="stylesheet" href="css/edit_mode.css">
+	<link rel="stylesheet" href="css/headers.css">
+	<link rel="stylesheet" href="css/input_areas.css">
+	<link rel="stylesheet" href="css/status.css">
+	<link rel="stylesheet" href="css/switches.css">
+	<link rel="stylesheet" href="css/drawer.css">
+	<link rel="stylesheet" href="css/lists.css">
+	<link rel="stylesheet" href="css/progress_activity.css">
+	<link rel="stylesheet" href="css/scrolling.css">
+	<link rel="stylesheet" href="css/seekbars.css">
+	<link rel="stylesheet" href="css/tabs.css">
+	<link rel="stylesheet" href="css/toolbars.css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="icons/styles/action_icons.css">
+	<link rel="stylesheet" href="icons/styles/media_icons.css">
+	<link rel="stylesheet" href="icons/styles/comms_icons.css">
+	<link rel="stylesheet" href="icons/styles/settings_icons.css">
+
+	<!-- Transitions -->
+	<link rel="stylesheet" href="transitions.css">
+
+	<!-- Util CSS: some extra tricks -->
+	<link rel="stylesheet" href="util.css">
 
 	<!--AngularJS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	
 	<!--Anguar-route-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	
 	<!--My script-->
 	<script src="script.js"></script>
 </head>
-<body ng-controller="appCtrl">
-	<header>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header"><a href="/" class="navbar-brand">Angular Routing Example</a></div>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-					<li><a href="#about"><i class="fa fa-shield">About</i></a></li>
-					<li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
 
-	<div id="main">
-		<div ng-view></div>
-	</div>
+<body>
+	<section data-type="sidebar">
+		<header>
+			<menu type="toolbar">
+				<a href="#content"><span class="icon icon-add">add</span></a>
+			</menu>
+			<h1>Menu</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#content">Login</a></li>
+				<li><a href="#content">Sobre</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section id="drawer" role="region">
+		<header>
+			<a href="#content"><span class="icon icon-menu">hide sidebar</span></a>
+			<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+			<h1>Hi</h1>
+		</header>
+	<div role="main"></div>
+	</section>
+
 </body>
 </html>
