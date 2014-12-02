@@ -1,103 +1,65 @@
 <!DOCTYPE html>
 <html ng-app="App">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 
-	<title>Futebolzinho</title>
-	
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	
-  
-	<!-- Building blocks -->
-	<link rel="stylesheet" href="css/action_menu.css">
-	<link rel="stylesheet" href="css/buttons.css">
-	<link rel="stylesheet" href="css/confirm.css">
-	<link rel="stylesheet" href="css/edit_mode.css">
-	<link rel="stylesheet" href="css/headers.css">
-	<link rel="stylesheet" href="css/input_areas.css">
-	<link rel="stylesheet" href="css/status.css">
-	<link rel="stylesheet" href="css/switches.css">
-	<link rel="stylesheet" href="css/drawer.css">
-	<link rel="stylesheet" href="css/lists.css">
-	<link rel="stylesheet" href="css/progress_activity.css">
-	<link rel="stylesheet" href="css/scrolling.css">
-	<link rel="stylesheet" href="css/seekbars.css">
-	<link rel="stylesheet" href="css/tabs.css">
-	<link rel="stylesheet" href="css/toolbars.css">
-	<link rel="stylesheet" href="css/layout.css">
+		<title>Futebolzinho</title>
+		
+		<!-- Building blocks -->
+		<link rel="stylesheet" href="css/action_menu.css">
+		<link rel="stylesheet" href="css/buttons.css">
+		<link rel="stylesheet" href="css/confirm.css">
+		<link rel="stylesheet" href="css/edit_mode.css">
+		<link rel="stylesheet" href="css/headers.css">
+		<link rel="stylesheet" href="css/input_areas.css">
+		<link rel="stylesheet" href="css/status.css">
+		<link rel="stylesheet" href="css/switches.css">
+		<link rel="stylesheet" href="css/drawer.css">
+		<link rel="stylesheet" href="css/lists.css">
+		<link rel="stylesheet" href="css/progress_activity.css">
+		<link rel="stylesheet" href="css/scrolling.css">
+		<link rel="stylesheet" href="css/seekbars.css">
+		<link rel="stylesheet" href="css/tabs.css">
+		<link rel="stylesheet" href="css/toolbars.css">
+		<link rel="stylesheet" href="css/layout.css">
 
-	<!-- Icons -->
-	<link rel="stylesheet" href="icons/styles/action_icons.css">
-	<link rel="stylesheet" href="icons/styles/media_icons.css">
-	<link rel="stylesheet" href="icons/styles/comms_icons.css">
-	<link rel="stylesheet" href="icons/styles/settings_icons.css">
+		<!--My css-->
+		<link rel="stylesheet" href="css/style.css">
 
-	<!-- Transitions -->
-	<link rel="stylesheet" href="transitions.css">
+		<!-- Icons -->
+		<link rel="stylesheet" href="images/icons/styles/action_icons.css">
+		<link rel="stylesheet" href="images/icons/styles/media_icons.css">
+		<link rel="stylesheet" href="images/icons/styles/comms_icons.css">
+		<link rel="stylesheet" href="images/icons/styles/settings_icons.css">
+		<link rel="stylesheet" href="images/gaia-icons-master/style-embedded.css">
 
-	<!-- Util CSS: some extra tricks -->
-	<link rel="stylesheet" href="util.css">
+		<!-- Transitions -->
+		<link rel="stylesheet" href="transitions.css">
 
-	<!--AngularJS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-	
-	<!--Anguar-route-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-	
-	<!--My script-->
-	<script src="js/app.js"></script>
-	<script src="js/appCtrl.js"></script>
-</head>
+		<!-- Util CSS: some extra tricks -->
+		<link rel="stylesheet" href="util.css">
 
-<body ng-controller="AppCtrl">
-	<section data-type="sidebar">
-		<header>
-			<menu type="toolbar">
-				<a href="#content"><span class="icon icon-add">add</span></a>
-			</menu>
-			<h1>Menu</h1>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="#content">Login</a></li>
-				<li><a href="#content">Sobre</a></li>
-			</ul>
-		</nav>
-	</section>
-	<section id="drawer" role="region">
-		<header>
-			<a href="#content"><span class="icon icon-menu">hide sidebar</span></a>
-			<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
-			<h1>Futebolzinho</h1>
-		</header>
-		<div role="main">
-			<section>
-				<p>É hora de convocar os jogadores!</p>
-				<form>
-					<p>
-						<input type="text" placeholder="Jogador" required="" ng-model="player">
-						<button type="reset">Clear</button>
-					</p>
-					<button type="button" class="btn btn-success" ng-click="convene()">Convocar</button>
-				</form>
-			</section>
-			<section class="gaia-list fit scroll sticky">
-				<header>Convocados</header>
-				<ul>
-					<li ng-repeat="item in listPlayers">
-						<a href="#">
-							<p ng-bind="item"></p>
-							<p></p>
-						</a>
-					</li>					
-				</ul>
-			</section>
-		</div>
-	</section>
+		<!--AngularJS-->
+		<script src="js/angular/angular.min.js"></script>
+		
+		<!--Anguar-route-->
+		<script src="js/angular/angular-route.min.js"></script>
+		
+		<!--My script-->
+		<script src="app.js"></script>
+		<script src="js/service/appService.js"></script>
+		<script src="js/appCtrl.js"></script>
+		<script src="js/editCtrl.js"></script>
 
 
-</body>
+
+	</head>
+
+	<body>
+	<div ng-view>
+		
+	</div>
+	</body>
 </html>
