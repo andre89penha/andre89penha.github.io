@@ -1,4 +1,3 @@
-app.controller('ListCtrl', ['$scope', 
-	function($scope){
-	
-}]);
+app.controller('ListCtrl', function($scope, $location, AppService){
+		
+});

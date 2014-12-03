@@ -48,5 +48,10 @@ app.factory('AppService', function(){
 			}
 		}
 	}
+
+	appService.sortPlayers = function(){
+		var sortList = players;
+		console.log(sortList.length);
+	}
 	return appService;
 });
