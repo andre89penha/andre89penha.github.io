@@ -1,0 +1,47 @@
+
+
+[role=main]{
+	padding: 5px;
+	padding-top: 60px;
+}
+[role=main] input{
+	margin-bottom: 15px; 
+	
+}
+
+body {
+	font-size: 3rem;
+}
+
+p{
+	display: inline;
+}
+button {
+	float: right;
+	width: 20px;
+	margin-right: 8px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield !important;
+}
+
+input{
+	margin-left: 10px;
+	width: 95% !important;
+
+}
+
+span{
+	margin-left:10px;
+}
+
+label{
+	margin-left: 10px;
+}

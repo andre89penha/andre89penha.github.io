@@ -1,8 +1,15 @@
-function initialize () {
-	var mapOptions = {
-		center: new google.maps.LatLng(-34.397, 150.644),
-		zoom: 10,
-		mapTypeId: google.maps.MapTypeId.SATELLITE
-	};
-	var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-}
+window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '607808502680754',
+          xfbml      : true,
+          version    : 'v2.2'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));

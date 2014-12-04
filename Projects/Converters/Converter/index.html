@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="converterApp">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="css/buttons.css" />
+<link rel="stylesheet" href="css/headers.css" />
+<link rel="stylesheet" href="css/input_areas.css" />
+<link rel="stylesheet" href="css/util.css" />
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/cross_browser.css" />
+<link rel="stylesheet" href="css/drawer.css" />
+<link rel="stylesheet" href="css/style.css" />
+<title>Converter</title>
+
+</head>
+<body>
+
+<section id="index" data-position="current">
+  <section id="drawer" role="region">
+    <header class="fixed">
+      <h1>Converter</h1>
+    </header>
+    
+    <section role="main" ng-controller="ConverterController">
+      <label>Kilometer</label>
+      <input type="number" ng-model="km" ng-change="kmToMile()" placeholder="Kilometer" />
+      <label>
+      	<span>{{mile | number:2}}</span> Mile(s)
+      </label>
+    </section>
+
+  </section>
+</section>
+
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/converter/ConverterService.js"></script>
+<script src="js/converter/ConverterController.js"></script>
+
+</body>
+</html>

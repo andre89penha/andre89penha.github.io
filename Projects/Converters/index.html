@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/headers.css">
+<link rel="stylesheet" href="css/input_areas.css">
+<link rel="stylesheet" href="css/util.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/cross_browser.css">
+<link rel="stylesheet" href="css/drawer.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Converter</title>
+
+</head>
+<body>
+
+<section id="index" data-position="current">
+  <section id="drawer" role="region">
+    <header class="fixed">
+      <h1>Converter</h1>
+    </header>
+    <section role="main" id="main">
+      <label for="">Km</label>
+      <input type="number" id="km">
+   	  <button id="btTransfer">
+      	<img src="images/transfer.png" height="12" width="16" alt="Transfer">
+      </button> 
+      <span id="mile">0</span> <p>Mile</p>    
+        	
+      
+    </section>
+  </section>
+</section>
+
+<script src="js/services/ConverterService.js"></script>
+<script src="js/controllers/ConverterController.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "List Names",
+  "description": "App for list",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/images/app_icon_128.png",
+    "60": "/images/app_icon_60.png"
+  },
+  "version": "1",
+  "developer": {
+    "name": "André",
+    "url": "andre89penha.github.io"
+  },
+  "default_locale": "pt-br"
+}

@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>André Luiz - andre89penha.github.io</title>
-	<link rel="stylesheet" href="">
-</head>
-<body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '607808502680754',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-	<header>
-		<h1>André Luiz</h1>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="Projects/Hi/index.html">Projects</a>
-			<a href="">Curriculum</a>
-		</nav>
-	</header>
-	<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
-</body>
+    <title>André Penha - andre89penha.github.io</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src"js/script.js"></script>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">André Penha</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projetos <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="Projects/Futebolzinho/index.html">Futebolzinho - fxos</a></li>
+                      <li><a href="Projects/angular-list-name/index.html">List Name - fxos</a></li>
+                      <li><a href="Projects/KmToMile/index.html">Km to mile - fxos</a></li>
+                      <li><a href="Projects/Celsius to Fahrenheit/index.html">Celsius to Fahrenheit - fxos</a></li>
+                      <li><a href="Projects/Converters/index.html">Converters - fxos</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">André Luiz da Silva Penha.</h1>
+            <p class="lead">Página contendo meus projetos como desenvolvedor.</p>
+          </div>
+          <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
